@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+        <style>
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+            }
+            #lado{
+                flex-direction: row;
+            }
+            #direita{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>Formulário</legend>
+                <label for="nome">
+                    Nome completo:
+                    <input type="text" name="nome">
+                </label>
+                <br>
+                <label for="date">
+                    Data de nascimento:
+                    <input type="date" name="date" >
+                </label>
+                <br>
+                <div id="lado">
+                    <label for="estado">
+                        Selecione o estado em que mora:
+                        <br>
+                        <select name="estado">
+                            <option value="PE">Pernambuco</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PR">Paraíba</option>
+                            <option value="SE">Sergipe</option>
+                        </select>
+                    </label>
+                    <label for="genero" id="direita" >
+                        Gênero: 
+                        <br>
+                        <input type="radio" name="genero" active> Masculino <br>
+                        <input type="radio" name="genero"> Feminino <br> 
+                        <input type="radio" name="genero"> Outro 
+                    </label>
+                </div>
+                <br>
+                <label for="conta">
+                    5 + 4 é ? 
+                    <input type="number">
+                </label>
+                <br>
+                <input type="button" value="Salvar">
+
+            </fieldset>
+            <input type="" sear>
+        </form>
+    </body>
+</html>
